@@ -20,7 +20,7 @@ public class DynamicNameChanges {
         File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
         File dest = new File("D:\\3_Other\\Ketan\\Important\\Personal\\Software Testing\\Training\\Screenshot\\Screenshot" + timestamp() + ".png");
         FileUtils.copyFile(src,dest);
-        Thread.sleep(3000);
+  
         driver.close();
     }
 
